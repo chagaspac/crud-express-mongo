@@ -1,7 +1,5 @@
-# Repo for Zell's CRUD, Express and MongoDB tutorial
-
-- [Demo](https://crud-express-mongo.herokuapp.com)
-- [Tutorial](http://zell-weekeat.com/crud-express-mongodb)
+# Election
+- I've deleted the delete and put function 'cause they were broken, and made some changes to fit my fields
 
 ## Installation
 

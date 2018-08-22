@@ -7,35 +7,51 @@
 </head>
 <body>
   <h1>May Node and Express be with you.</h1>
-
+  
   <ul class="quotes">
-  <% for(var i=0; i<quotes.length; i++) {%>
-    <li class="quote">
-      <span><%= quotes[i].name %></span>
-      <span><%= quotes[i].quote %></span>
-    </li>
-  <% } %>
-  </ul>
-
-  <h2>Add a quote</h2>
-
-  <form action="/quotes" method="POST">
-    <input type="text" placeholder="name" name="name">
-    <input type="text" placeholder="quote" name="quote">
-    <button type="submit">Submit</button>
-  </form>
-
-  <div>
-    <h2>Replace last quote written by Master Yoda with a quote written by Darth Vadar</h2>
-    <button id="update"> Darth Vadar invades! </button>
-  </div>
-
-  <div>
-    <h2>Delete Darth Vadar's first quote</h2>
-    <button id="delete"> Delete first Darth Vadar quote </button>
-  </div>
-
-  <script src="main.js"></script>
-
-</body>
-</html>
+    <% for(var i=0; i<quotes.length; i++) {%>
+      <li class="quote">
+        <span><%= quotes[i].nome %></span>
+        <span><%= quotes[i].conjuge %></span>
+        <span><%= quotes[i].cpf %></span>
+        <span><%= quotes[i].telefone %></span>
+        <span><%= quotes[i].celular %></span>
+        <span><%= quotes[i].titulo %></span>
+        <span><%= quotes[i].zona %></span>
+        <span><%= quotes[i].sessao %></span>
+        <span><%= quotes[i].bairro %></span>
+        <span><%= quotes[i].rua %></span>
+        <span><%= quotes[i].cidade %></span>
+        <span><%= quotes[i].facebook %></span>
+        <span><%= quotes[i].instagram %></span>
+        <span><%= quotes[i].responsavel %></span>
+        <span><%= quotes[i].obs %></span>
+      </li>
+      <% } %>
+    </ul>
+    
+    <h2>Add a quote</h2>
+    
+    <form action="/quotes" method="POST">
+      <input type="text" placeholder="Nome completo" name="nome">
+      <input type="text" placeholder="Cônjuge" name="conjuge">
+      <input type="text" placeholder="CPF" name="cpf">
+      <input type="text" placeholder="Telefone Fixo" name="telefone">
+      <input type="text" placeholder="Celular - Whatsapp" name="celular">
+      <input type="text" placeholder="Título" name="titulo">
+      <input type="text" placeholder="Zona" name="zona">
+      <input type="text" placeholder="Sessão" name="sessao">
+      <input type="text" placeholder="Bairro" name="bairro">
+      <input type="text" placeholder="Rua" name="rua">
+      <input type="text" placeholder="Cidade" name="cidade">
+      <input type="text" placeholder="Facebook" name="facebook">
+      <input type="text" placeholder="Instagram" name="instagram">
+      <input type="text" placeholder="Responsável" name="responsavel">
+      <input type="text" placeholder="OBS" name="obs">
+      <button type="submit">Submit</button>
+    </form>
+    
+    <script src="main.js"></script>
+    
+  </body>
+  </html>
